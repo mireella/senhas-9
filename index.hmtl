@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+
+    <div class="output">
+      <input type="password" id="password" readonly>
+      <button id="toggle"><i class="eye">👁️</i></button>
+      <button id="copy">📋</button>
+    </div>
+
+    <div class="strength">
+      <div class="bar" id="strength-bar"></div>
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="uppercase" checked> Letras maiúsculas</label>
+      <label><input type="checkbox" id="lowercase" checked> Letras minúsculas</label>
+      <label><input type="checkbox" id="numbers" checked> Números</label>
+      <label><input type="checkbox" id="symbols"> Símbolos</label>
+      <label>Tamanho: <input type="number" id="length" min="4" max="32" value="12"></label>
+    </div>
+
+    <button id="generate">Gerar Senha</button>
+    <button id="toggle-mode">Alternar Tema</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
